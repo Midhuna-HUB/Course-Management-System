@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dashboard | CourseHub</title>
+</head>
+
+<body style="margin:0; font-family:Segoe UI, sans-serif; background:#0f172a; color:white;">
+
+<!-- NAVBAR -->
+<div style="
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:linear-gradient(90deg,#4f46e5,#06b6d4);
+">
+    <h2 style="margin:0;">🎓 CourseHub</h2>
+
+    <div>
+        <a href="index.html" style="color:white; text-decoration:none; margin:0 12px;">Home</a>
+        <a href="courses.html" style="color:white; text-decoration:none; margin:0 12px;">Courses</a>
+        <a href="login.html" style="color:white; text-decoration:none; margin:0 12px;">Logout</a>
+    </div>
+</div>
+
+<!-- HEADER -->
+<div style="text-align:center; padding:40px 20px;">
+    <h1>👋 Welcome Back Student</h1>
+    <p style="color:#94a3b8;">Track your learning progress here</p>
+</div>
+
+<!-- STATS CARDS -->
+<div style="
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    padding:20px;
+">
+
+    <div style="
+        width:220px;
+        padding:25px;
+        border-radius:18px;
+        background:linear-gradient(135deg,#6366f1,#3b82f6);
+        box-shadow:0 10px 25px rgba(0,0,0,0.4);
+        text-align:center;
+    ">
+        <h3>📚 Enrolled</h3>
+        <p style="font-size:32px; margin:10px 0;">0</p>
+    </div>
+
+    <div style="
+        width:220px;
+        padding:25px;
+        border-radius:18px;
+        background:linear-gradient(135deg,#10b981,#059669);
+        text-align:center;
+    ">
+        <h3>✅ Completed</h3>
+        <p style="font-size:32px; margin:10px 0;">0</p>
+    </div>
+
+    <div style="
+        width:220px;
+        padding:25px;
+        border-radius:18px;
+        background:linear-gradient(135deg,#f97316,#ef4444);
+        text-align:center;
+    ">
+        <h3>📊 Progress</h3>
+        <p style="font-size:32px; margin:10px 0;">0%</p>
+    </div>
+
+</div>
+
+<!-- MY COURSES -->
+<div style="padding:40px;">
+    <h2 style="text-align:center; margin-bottom:20px;">📖 My Learning</h2>
+
+    <div style="
+        max-width:900px;
+        margin:auto;
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+        gap:20px;
+    ">
+
+        <div style="
+            background:#1f2937;
+            padding:20px;
+            border-radius:15px;
+        ">
+            <h3 style="color:#60a5fa;">Web Development</h3>
+
+            <div style="
+                height:10px;
+                background:#374151;
+                border-radius:5px;
+                margin:10px 0;
+            ">
+                <div style="width:30%; height:10px; background:#3b82f6; border-radius:5px;"></div>
+            </div>
+
+            <p style="color:#94a3b8;">Progress: 30%</p>
+        </div>
+
+        <div style="
+            background:#1f2937;
+            padding:20px;
+            border-radius:15px;
+        ">
+            <h3 style="color:#34d399;">Python Programming</h3>
+
+            <div style="
+                height:10px;
+                background:#374151;
+                border-radius:5px;
+                margin:10px 0;
+            ">
+                <div style="width:60%; height:10px; background:#10b981; border-radius:5px;"></div>
+            </div>
+
+            <p style="color:#94a3b8;">Progress: 60%</p>
+        </div>
+
+        <div style="
+            background:#1f2937;
+            padding:20px;
+            border-radius:15px;
+        ">
+            <h3 style="color:#fbbf24;">Data Science</h3>
+
+            <div style="
+                height:10px;
+                background:#374151;
+                border-radius:5px;
+                margin:10px 0;
+            ">
+                <div style="width:10%; height:10px; background:#f59e0b; border-radius:5px;"></div>
+            </div>
+
+            <p style="color:#94a3b8;">Progress: 10%</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div style="
+    text-align:center;
+    padding:20px;
+    background:#0f172a;
+    color:#94a3b8;
+">
+    © 2026 CourseHub | Student Course Management System
+</div>
+
+</body>
+</html>
