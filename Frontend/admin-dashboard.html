@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<title>Admin Dashboard | CourseHub</title>
+
+
+<style>
+
+body{
+
+margin:0;
+font-family:Segoe UI,sans-serif;
+background:#0f172a;
+color:white;
+
+}
+
+
+.navbar{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:linear-gradient(90deg,#4f46e5,#06b6d4);
+
+}
+
+
+.navbar a{
+
+color:white;
+text-decoration:none;
+margin:0 12px;
+
+}
+
+
+
+.header{
+
+text-align:center;
+padding:40px;
+
+}
+
+
+
+.cards{
+
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+
+}
+
+
+
+.card{
+
+width:220px;
+padding:25px;
+border-radius:18px;
+text-align:center;
+background:#1f2937;
+box-shadow:0 10px 25px rgba(0,0,0,.4);
+
+}
+
+
+
+table{
+
+width:85%;
+margin:40px auto;
+border-collapse:collapse;
+background:#1f2937;
+
+}
+
+
+th,td{
+
+padding:15px;
+border-bottom:1px solid #374151;
+text-align:center;
+
+}
+
+
+th{
+
+background:#374151;
+
+}
+
+
+
+.btn{
+
+padding:8px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+
+}
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+
+<div class="navbar">
+
+
+<h2>
+🎓 CourseHub Admin
+</h2>
+
+
+
+<div>
+
+<a href="index.html">
+Home
+</a>
+
+<a href="courses.html">
+Courses
+</a>
+
+
+<a href="login.html">
+Logout
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="header">
+
+
+<h1>
+👨‍💼 Admin Dashboard
+</h1>
+
+
+<p style="color:#94a3b8;">
+Manage courses and student enrollment
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="cards">
+
+
+<div class="card"
+style="background:linear-gradient(135deg,#6366f1,#3b82f6);">
+
+<h3>
+📚 Total Courses
+</h3>
+
+<h1>
+25
+</h1>
+
+</div>
+
+
+
+
+<div class="card"
+style="background:linear-gradient(135deg,#10b981,#059669);">
+
+<h3>
+👨‍🎓 Students
+</h3>
+
+<h1>
+500
+</h1>
+
+</div>
+
+
+
+
+
+<div class="card"
+style="background:linear-gradient(135deg,#f97316,#ef4444);">
+
+<h3>
+📈 Enrollments
+</h3>
+
+<h1>
+1200
+</h1>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div style="text-align:center;margin-top:40px;">
+
+
+<a href="add-course.html"
+class="btn"
+style="background:#22c55e;color:black;">
+
+➕ Add Course
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+<table>
+
+
+<tr>
+
+<th>
+Course Name
+</th>
+
+<th>
+Category
+</th>
+
+<th>
+Action
+</th>
+
+
+</tr>
+
+
+
+
+<tr>
+
+<td>
+Web Development
+</td>
+
+<td>
+Programming
+</td>
+
+
+<td>
+
+<a href="edit-course.html"
+class="btn"
+style="background:#facc15;color:black;">
+
+Edit
+
+</a>
+
+</td>
+
+
+</tr>
+
+
+
+
+
+<tr>
+
+<td>
+Python Programming
+</td>
+
+<td>
+Programming
+</td>
+
+
+<td>
+
+<a href="edit-course.html"
+class="btn"
+style="background:#facc15;color:black;">
+
+Edit
+
+</a>
+
+</td>
+
+
+</tr>
+
+
+
+
+</table>
+
+
+
+
+
+
+<footer style="
+text-align:center;
+padding:20px;
+color:#94a3b8;
+">
+
+© 2026 CourseHub | Admin Panel
+
+</footer>
+
+
+
+</body>
+
+</html>
