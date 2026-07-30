@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Edit Course | CourseHub</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background: linear-gradient(90deg, #4f46e5, #06b6d4);
+        }
+
+        .navbar h2 {
+            margin: 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+        }
+
+        .navbar a:hover {
+            color: #facc15;
+        }
+
+        .container {
+            min-height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 20px;
+        }
+
+        .card {
+            width: 420px;
+            max-width: 100%;
+            padding: 35px;
+            background: #1f2937;
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 10px;
+            background: #374151;
+            color: white;
+            outline: none;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: 2px solid #06b6d4;
+        }
+
+        textarea {
+            height: 100px;
+            resize: none;
+        }
+
+        select option {
+            background: #374151;
+            color: white;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 12px;
+            background: linear-gradient(90deg, #facc15, #f59e0b);
+            color: #111827;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 700px) {
+
+            .navbar {
+                flex-direction: column;
+                gap: 12px;
+                padding: 15px 20px;
+            }
+
+            .navbar a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+
+            .card {
+                padding: 30px 20px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="navbar">
+
+        <h2>🎓 CourseHub Admin</h2>
+
+        <div>
+
+            <a href="admin-dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="courses.html">
+                Courses
+            </a>
+
+        </div>
+
+    </div>
+
+    <main class="container">
+
+        <div class="card">
+
+            <h2>✏️ Edit Course</h2>
+
+            <p style="color:#94a3b8;">
+                Update course information
+            </p>
+
+            <input type="text"
+                   id="editCourseName"
+                   value="Web Development"
+                   placeholder="Course Name">
+
+            <select id="editCategory">
+
+                <option value="Programming">
+                    Programming
+                </option>
+
+                <option value="Data Science">
+                    Data Science
+                </option>
+
+                <option value="AI & Machine Learning">
+                    AI & Machine Learning
+                </option>
+
+            </select>
+
+            <textarea id="editDescription"
+                      placeholder="Course Description">Learn HTML, CSS, JavaScript and responsive web design.</textarea>
+
+            <input type="text"
+                   id="editDuration"
+                   value="3 Months"
+                   placeholder="Course Duration">
+
+            <input type="text"
+                   id="editInstructor"
+                   value="John Smith"
+                   placeholder="Instructor Name">
+
+            <button type="button"
+                    onclick="updateCourse()">
+
+                Update Course
+
+            </button>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        © 2026 CourseHub | Admin Panel
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard | CourseHub</title>
+
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+
+body{
+
+    margin:0;
+    font-family:"Segoe UI",sans-serif;
+    background:#0f172a;
+    color:white;
+
+}
+
+
+
+/* Navbar */
+
+.navbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:linear-gradient(90deg,#4f46e5,#06b6d4);
+
+}
+
+
+.navbar h2{
+
+    margin:0;
+
+}
+
+
+
+.navbar a{
+
+    color:white;
+    text-decoration:none;
+    margin:0 12px;
+
+}
+
+
+.navbar a:hover{
+
+    color:#facc15;
+
+}
+
+
+
+
+
+/* Dashboard Header */
+
+.dashboard-header{
+
+    text-align:center;
+    margin-top:40px;
+    padding:0 20px;
+
+}
+
+
+
+.dashboard-header h1{
+
+    font-size:38px;
+
+}
+
+
+
+.dashboard-header p{
+
+    color:#94a3b8;
+
+}
+
+
+
+
+
+/* Cards */
+
+.cards{
+
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    padding:40px;
+
+}
+
+
+
+
+.card{
+
+    width:240px;
+    padding:30px 20px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+
+}
+
+
+
+.card h1{
+
+    font-size:40px;
+    margin:10px;
+
+}
+
+
+.card h2{
+
+    font-size:35px;
+
+}
+
+
+
+.card h3{
+
+    margin:10px;
+
+}
+
+
+
+
+.enrolled-card{
+
+    background:#2563eb;
+
+}
+
+
+
+.completed-card{
+
+    background:#059669;
+
+}
+
+
+
+.progress-card{
+
+    background:#f97316;
+
+}
+
+
+
+
+
+
+/* Button */
+
+.btn{
+
+    display:block;
+    width:220px;
+    padding:12px;
+    margin:20px auto 50px;
+
+    background:#22c55e;
+
+    color:black;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    border-radius:10px;
+
+    font-weight:bold;
+
+}
+
+
+
+.btn:hover{
+
+    background:#16a34a;
+
+    color:white;
+
+}
+
+
+
+
+
+
+
+footer{
+
+    text-align:center;
+    padding:20px;
+    color:#94a3b8;
+
+}
+
+
+
+
+
+
+/* Mobile */
+
+@media(max-width:700px){
+
+
+    .navbar{
+
+        flex-direction:column;
+        gap:15px;
+        padding:15px 20px;
+
+    }
+
+
+
+    .navbar a{
+
+        display:inline-block;
+        margin:5px;
+
+    }
+
+
+
+    .cards{
+
+        padding:30px 20px;
+
+    }
+
+
+
+    .card{
+
+        width:100%;
+        max-width:300px;
+
+    }
+
+
+
+}
+
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+
+
+<!-- Navbar -->
+
+<div class="navbar">
+
+
+<h2>
+🎓 CourseHub
+</h2>
+
+
+
+<div>
+
+
+<a href="index.html">
+Home
+</a>
+
+
+
+<a href="browse-courses.html">
+Courses
+</a>
+
+
+
+<a href="my-courses.html">
+My Courses
+</a>
+
+
+
+<a href="contact.html">
+Contact
+</a>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- Header -->
+
+<header class="dashboard-header">
+
+
+<h1 id="welcomeHeading">
+
+👋 Welcome Student
+
+</h1>
+
+
+
+<p>
+
+Track your learning progress
+
+</p>
+
+
+
+</header>
+
+
+
+
+
+
+
+
+
+<!-- Dashboard Cards -->
+
+<main>
+
+
+<div class="cards">
+
+
+
+
+
+<div class="card enrolled-card">
+
+
+<h2>
+📚
+</h2>
+
+
+<h3>
+Enrolled Courses
+</h3>
+
+
+
+<h1 id="enrolledCourses">
+
+0
+
+</h1>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card completed-card">
+
+
+<h2>
+✅
+</h2>
+
+
+<h3>
+Completed
+</h3>
+
+
+
+<h1 id="completedCourses">
+
+0
+
+</h1>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card progress-card">
+
+
+<h2>
+📊
+</h2>
+
+
+<h3>
+Progress
+</h3>
+
+
+
+<h1 id="courseProgress">
+
+0%
+
+</h1>
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<a href="my-courses.html"
+class="btn">
+
+View My Courses
+
+</a>
+
+
+
+
+</main>
+
+
+
+
+
+
+
+
+<footer>
+
+
+© 2026 CourseHub | Student Course Management System
+
+
+</footer>
+
+
+
+
+
+<script src="script.js"></script>
+
+
+
+</body>
+
+
+</html>

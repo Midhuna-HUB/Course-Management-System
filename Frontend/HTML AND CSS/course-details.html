@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<title>Course Details | CourseHub</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style>
+
+*{
+box-sizing:border-box;
+}
+
+
+body{
+
+margin:0;
+font-family:Segoe UI,sans-serif;
+background:#0f172a;
+color:white;
+
+}
+
+
+
+/* Navbar */
+
+.navbar{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+
+background:linear-gradient(90deg,#4f46e5,#06b6d4);
+
+}
+
+
+.navbar a{
+
+color:white;
+text-decoration:none;
+margin:0 12px;
+
+}
+
+
+.navbar a:hover{
+
+color:#facc15;
+
+}
+
+
+
+
+
+/* Header */
+
+.header{
+
+text-align:center;
+padding:40px 20px;
+
+}
+
+
+
+
+.header p{
+
+color:#94a3b8;
+
+}
+
+
+
+
+
+/* Main Section */
+
+
+.main{
+
+display:flex;
+gap:25px;
+justify-content:center;
+flex-wrap:wrap;
+padding:20px 40px;
+
+}
+
+
+
+
+
+.video{
+
+width:550px;
+max-width:100%;
+
+background:#1f2937;
+
+padding:25px;
+
+border-radius:18px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.4);
+
+}
+
+
+
+
+
+.module{
+
+width:300px;
+max-width:100%;
+
+background:#1f2937;
+
+padding:25px;
+
+border-radius:18px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.4);
+
+}
+
+
+
+
+
+
+
+/* Video Area */
+
+
+.video-box{
+
+height:250px;
+
+background:#111827;
+
+border-radius:15px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+color:#94a3b8;
+
+margin-top:20px;
+
+}
+
+
+
+
+
+/* Modules */
+
+
+li{
+
+padding:12px;
+
+border-bottom:1px solid #374151;
+
+}
+
+
+
+
+
+
+/* Button */
+
+
+.btn{
+
+display:block;
+
+text-align:center;
+
+padding:12px;
+
+margin-top:20px;
+
+border-radius:12px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+background:linear-gradient(90deg,#22c55e,#16a34a);
+
+color:black;
+
+border:none;
+
+cursor:pointer;
+
+width:100%;
+
+}
+
+
+.btn:hover{
+
+opacity:.85;
+
+}
+
+
+
+
+
+
+/* Progress */
+
+
+.progress{
+
+width:600px;
+
+max-width:90%;
+
+margin:40px auto;
+
+background:#1f2937;
+
+padding:25px;
+
+border-radius:18px;
+
+}
+
+
+
+
+.bar{
+
+height:12px;
+
+background:#374151;
+
+border-radius:10px;
+
+overflow:hidden;
+
+}
+
+
+
+
+.fill{
+
+width:0%;
+
+height:12px;
+
+background:#3b82f6;
+
+border-radius:10px;
+
+transition:.5s;
+
+}
+
+
+
+
+
+footer{
+
+text-align:center;
+
+padding:20px;
+
+color:#94a3b8;
+
+}
+
+
+
+
+
+
+/* Mobile */
+
+
+@media(max-width:700px){
+
+
+.navbar{
+
+flex-direction:column;
+
+gap:15px;
+
+padding:20px;
+
+}
+
+
+.navbar a{
+
+display:inline-block;
+
+margin:5px;
+
+}
+
+
+.main{
+
+padding:20px;
+
+}
+
+
+}
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+
+
+<!-- Navbar -->
+
+<div class="navbar">
+
+
+<h2>
+🎓 CourseHub
+</h2>
+
+
+
+<div>
+
+
+<a href="index.html">
+Home
+</a>
+
+
+<a href="courses.html">
+Courses
+</a>
+
+
+<a href="my-courses.html">
+My Courses
+</a>
+
+
+<a href="dashboard.html">
+Dashboard
+</a>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Course Header -->
+
+
+<div class="header">
+
+
+<h1 id="courseTitle">
+
+📘 Course Details
+
+</h1>
+
+
+<p>
+
+Learn skills and build real-world projects
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- Main Content -->
+
+
+<div class="main">
+
+
+
+
+
+<div class="video">
+
+
+<h2 style="color:#60a5fa;">
+
+📺 Course Video
+
+</h2>
+
+
+
+<div class="video-box">
+
+Video Player Area
+
+</div>
+
+
+
+
+<p style="color:#cbd5e1;">
+
+Watch lessons and practice daily to improve your skills.
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="module">
+
+
+<h2 style="color:#34d399;">
+
+📚 Modules
+
+</h2>
+
+
+
+
+<ul style="list-style:none;padding:0;color:#cbd5e1;">
+
+
+<li>
+✔ Introduction
+</li>
+
+
+<li>
+✔ HTML Basics
+</li>
+
+
+<li>
+✔ CSS Styling
+</li>
+
+
+<li>
+✔ JavaScript Basics
+</li>
+
+
+<li>
+✔ Mini Project
+</li>
+
+
+</ul>
+
+
+
+
+
+
+<button onclick="enrollCourse()"
+class="btn">
+
+Enroll Course
+
+</button>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- Progress -->
+
+
+<div class="progress">
+
+
+<h2>
+
+📊 Learning Progress
+
+</h2>
+
+
+
+<div class="bar">
+
+<div class="fill" id="progressFill">
+
+</div>
+
+</div>
+
+
+
+
+<p id="progressText"
+style="color:#94a3b8;">
+
+0% Completed
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<footer>
+
+© 2026 CourseHub | Student Course Management System
+
+</footer>
+
+
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Enrollment Success | CourseHub</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background: linear-gradient(90deg, #4f46e5, #06b6d4);
+        }
+
+        .navbar h2 {
+            margin: 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+        }
+
+        .navbar a:hover {
+            color: #facc15;
+        }
+
+        .container {
+            min-height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 20px;
+        }
+
+        .card {
+            width: 450px;
+            max-width: 100%;
+            padding: 40px;
+            background: #1f2937;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .icon {
+            font-size: 70px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 10px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .my-courses-btn {
+            background: #22c55e;
+            color: black;
+        }
+
+        .browse-btn {
+            background: #facc15;
+            color: black;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 700px) {
+
+            .navbar {
+                padding: 15px 20px;
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .navbar a {
+                display: inline-block;
+                margin: 5px 7px;
+            }
+
+            .card {
+                padding: 30px 20px;
+            }
+
+            .btn {
+                display: block;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="navbar">
+
+        <h2>🎓 CourseHub</h2>
+
+        <div>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="my-courses.html">
+                My Courses
+            </a>
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+        </div>
+
+    </div>
+
+    <main class="container">
+
+        <div class="card">
+
+            <div class="icon">
+                🎉
+            </div>
+
+            <h1>
+                Enrollment Successful!
+            </h1>
+
+            <p style="color:#cbd5e1; font-size:18px;">
+
+                Congratulations! You have successfully enrolled
+                in the course.
+
+            </p>
+
+            <h3 style="color:#60a5fa;">
+
+                💻 Web Development
+
+            </h3>
+
+            <p style="color:#94a3b8;">
+
+                Start learning modules and complete your course
+                step by step.
+
+            </p>
+
+            <a href="my-courses.html"
+               class="btn my-courses-btn">
+
+                Go to My Courses
+
+            </a>
+
+            <a href="browse-courses.html"
+               class="btn browse-btn">
+
+                Browse More Courses
+
+            </a>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        © 2026 CourseHub | Student Course Management System
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
