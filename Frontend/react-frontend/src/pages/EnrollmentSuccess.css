@@ -1,0 +1,256 @@
+.enrollment-success-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--warm-ivory);
+  color: var(--text-dark);
+}
+
+/* Main */
+
+.enrollment-success-container {
+  flex: 1;
+  width: min(900px, 92%);
+  margin: 0 auto;
+  padding: 70px 0;
+}
+
+/* Success Card */
+
+.success-card {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 50px 55px;
+  text-align: center;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 25px;
+  box-shadow: 0 18px 50px rgba(80, 45, 85, 0.09);
+}
+
+/* Success Icon */
+
+.success-icon {
+  width: 78px;
+  height: 78px;
+  margin: 0 auto 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--soft-peach);
+  color: var(--deep-plum);
+  font-size: 38px;
+  font-weight: 700;
+  border: 8px solid #fdf1e7;
+}
+
+.success-label {
+  margin: 0 0 9px;
+  color: var(--muted-purple);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+}
+
+.success-card h1 {
+  margin: 0;
+  color: var(--deep-plum);
+  font-family: "Playfair Display", serif;
+  font-size: 38px;
+  line-height: 1.2;
+}
+
+.success-message {
+  max-width: 500px;
+  margin: 15px auto 30px;
+  color: var(--text-light);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Enrolled Course */
+
+.enrolled-course {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding: 20px;
+  text-align: left;
+  background: var(--warm-ivory);
+  border: 1px solid var(--border);
+  border-radius: 17px;
+}
+
+.enrolled-course-icon {
+  width: 65px;
+  height: 65px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background: var(--deep-plum);
+  color: var(--soft-peach);
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.enrolled-course span {
+  color: var(--muted-purple);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.enrolled-course h2 {
+  margin: 5px 0;
+  color: var(--deep-plum);
+  font-size: 18px;
+}
+
+.enrolled-course p {
+  margin: 0;
+  color: var(--text-light);
+  font-size: 12px;
+}
+
+/* Actions */
+
+.success-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.start-learning-button,
+.view-courses-button {
+  padding: 13px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.start-learning-button {
+  background: var(--deep-plum);
+  color: var(--white);
+}
+
+.start-learning-button:hover {
+  background: var(--muted-purple);
+}
+
+.view-courses-button {
+  background: var(--soft-peach);
+  color: var(--deep-plum);
+}
+
+.view-courses-button:hover {
+  background: #f0cda9;
+}
+
+.browse-more-link {
+  display: inline-block;
+  margin-top: 22px;
+  color: var(--muted-purple);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.browse-more-link:hover {
+  color: var(--deep-plum);
+  text-decoration: underline;
+}
+
+/* Bottom Message */
+
+.success-bottom-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  margin-top: 28px;
+}
+
+.success-bottom-message span {
+  color: var(--muted-purple);
+  font-size: 16px;
+}
+
+.success-bottom-message p {
+  margin: 0;
+  color: var(--text-light);
+  font-size: 12px;
+}
+
+/* Footer */
+
+.enrollment-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 28px 5%;
+  background: var(--white);
+  border-top: 1px solid var(--border);
+}
+
+.enrollment-footer div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.enrollment-footer strong {
+  color: var(--deep-plum);
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+}
+
+.enrollment-footer span,
+.enrollment-footer p {
+  color: var(--text-light);
+  font-size: 12px;
+}
+
+.enrollment-footer p {
+  margin: 0;
+}
+
+/* Responsive */
+
+@media (max-width: 650px) {
+  .enrollment-success-container {
+    padding: 45px 0;
+  }
+
+  .success-card {
+    padding: 38px 25px;
+  }
+
+  .success-card h1 {
+    font-size: 31px;
+  }
+
+  .success-actions {
+    flex-direction: column;
+  }
+
+  .start-learning-button,
+  .view-courses-button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .enrolled-course {
+    align-items: flex-start;
+  }
+
+  .enrollment-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,90 @@
+.about-page {
+  min-height: 100vh;
+  background: #f8f9fc;
+}
+
+.about-hero {
+  text-align: center;
+  padding: 70px 20px 50px;
+  background: white;
+}
+
+.about-hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.about-hero p {
+  font-size: 18px;
+  color: #666;
+}
+
+.about-content {
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+.about-section {
+  background: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.about-section h2,
+.technology-section h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.about-section p {
+  color: #666;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.about-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.about-card h3 {
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.about-card p {
+  color: #666;
+  margin: 10px 0;
+}
+
+.technology-section {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.technology-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.technology-list span {
+  padding: 10px 18px;
+  background: #f1f3f8;
+  border-radius: 20px;
+  font-size: 15px;
+}
